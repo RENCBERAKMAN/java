@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthDesktopIconUI;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,8 +11,29 @@ public class Main {
         System.out.println(12 + 12);//iki sayisal deger olursa artı operatoru devreye girer ve toplar.
         System.out.print("BACK\n");//sondaki \n=println yani oda bir sonraki satira alt satirda baslar.
         System.out.println("END");
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////
         System.out.println("BACK\tEND");//\t bir tab bosluk birakir.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+      byte rencber = 100;
+      System.out.println("rencberin degeri :" +rencber);
+      short akman = 1000;
+      System.out.println("akmanin degeri :"+akman);
+      int deneme = 30000;
+      System.out.println("deneme degeri :"+deneme);
+      long deneme1 = 23234444;
+      System.out.println("deneme1 degeri :"+deneme1);
+      float renc = 134.9f;
+      System.out.println("Float degeri :"+ renc);
+      double akm = 3.05;
+      System.out.println("Double degeri :"+akm);
+      char u = 112;
+      System.out.println("Char :"+u);
+      String yazi = "Rencber akman";
+      System.out.println("String :"+yazi);
+      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                              //|| : Veya                            //% : Mod alma        //a++ :Artırma
+                             // != :Eşit değil                      //== : Eşitlik        //b-- :Eksiltme
+                            //!(a&&b) :Değil                       //&& : ve
+      ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         }
     }
