@@ -20,6 +20,10 @@ public class Main {
         if (sec == 1) {
             ogrenciNotHesapla();
         }
+        else if (sec == 2){
+            fahrenheithesapla();
+        }
+
     }
 
     public static void ogrenciNotHesapla() {
@@ -44,5 +48,15 @@ public class Main {
             System.out.println("Ders Adı: " + ders);
             System.out.printf("TEBRİKLER!!! %.2f ortalama ile geçtiniz\n", ort);
         }
+    }
+
+
+    public static void fahrenheithesapla(){
+        Scanner fahren = new Scanner(System.in);
+        double fah;
+        int sicaklik;
+        System.out.print("Sicaklik degerini giriniz :");sicaklik = fahren.nextInt();
+        fah = (sicaklik * 9/5)+32;
+        System.out.printf("Fahrenheit degeri : %.2f",fah);
     }
 }
