@@ -10,7 +10,8 @@ public class Main {
         System.out.println("------------------------------------");
         System.out.println("[1]-Ogrenci Not Hesaplama");
         System.out.println("[2]-Fahrenheit Hesaplama");
-        System.out.println("['A']-Faktoriyel Hesaplama");
+        System.out.println("[A]-Faktoriyel Hesaplama");
+        System.out.println("[B]-Daire alan Hesaplama");
         System.out.println("--------------------------------------");
         System.out.print("Lutfen bir secim yapiniz :");
         String sec = secim.nextLine().trim().toUpperCase();
@@ -24,6 +25,9 @@ public class Main {
                 break;
             case "A":
                 faktoriyelHesaplayici(secim);
+                break;
+            case "B":
+                daireAlanHesaplayici(secim);
                 break;
             default:
                 System.out.print("Gecersiz karekter girdiniz lutfen yapmak istediginiz islemin yanındaki karekteri giriniz.");
@@ -70,6 +74,13 @@ public class Main {
         int sayi = secim.nextInt();
         int sonuc = FaktoriyelHesaplayici.rencber(sayi);
         System.out.printf("Girdiginiz sayinin faktoriyeli %d! =%d",sayi,sonuc);
+    }
+
+    private static void daireAlanHesaplayici(Scanner secim){
+        System.out.print("Lutfen dairenin yaricapini giriniz :");
+        int yaricap = secim.nextInt();
+        double alan = DaireAlanHesaplayici.rencberakman(yaricap);
+        System.out.printf("Dairenin Alanı : %.2f",alan);
     }
 
 }
