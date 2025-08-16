@@ -12,6 +12,7 @@ public class Main {
         System.out.println("[2]-Fahrenheit Hesaplama");
         System.out.println("[A]-Faktoriyel Hesaplama");
         System.out.println("[B]-Daire alan Hesaplama");
+        System.out.println("[C]-Dikdorgen alan hesaplama");
         System.out.println("--------------------------------------");
         System.out.print("Lutfen bir secim yapiniz :");
         String sec = secim.nextLine().trim().toUpperCase();
@@ -28,6 +29,9 @@ public class Main {
                 break;
             case "B":
                 daireAlanHesaplayici(secim);
+                break;
+            case "C":
+                diktortgenAlanHesaplama(secim);
                 break;
             default:
                 System.out.print("Gecersiz karekter girdiniz lutfen yapmak istediginiz islemin yanındaki karekteri giriniz.");
@@ -81,6 +85,13 @@ public class Main {
         int yaricap = secim.nextInt();
         double alan = DaireAlanHesaplayici.rencberakman(yaricap);
         System.out.printf("Dairenin Alanı : %.2f",alan);
+    }
+
+    private static void diktortgenAlanHesaplama(Scanner secim){
+        System.out.print("Diktorgenin kisa kenarini giriniz :"); int a = secim.nextInt();
+        System.out.print("Diktortgenin uzun kenarini giriniz :");int b = secim.nextInt();
+        int dikalan = DikdorgenAlanHesaplayici.dikhesap(a, b);
+        System.out.printf("Diktorgenin alani : %d",dikalan);
     }
 
 }
