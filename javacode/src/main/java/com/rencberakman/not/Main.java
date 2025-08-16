@@ -1,6 +1,5 @@
 package com.rencberakman.not;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -90,7 +89,7 @@ public class Main {
     private static void diktortgenAlanHesaplama(Scanner secim){
         System.out.print("Diktorgenin kisa kenarini giriniz :"); int a = secim.nextInt();
         System.out.print("Diktortgenin uzun kenarini giriniz :");int b = secim.nextInt();
-        int dikalan = DikdorgenAlanHesaplayici.dikhesap(a, b);
+        int dikalan = DikdortgenAlanHesaplayici.dikhesap(a, b);
         System.out.printf("Diktorgenin alani : %d",dikalan);
     }
 
